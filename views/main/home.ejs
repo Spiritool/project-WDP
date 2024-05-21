@@ -195,19 +195,26 @@
         }
 
         .contact-info {
-            position: relative;
-            /* Tambahkan position relative */
-            background-color: #000;
-            color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            flex: 1;
-            margin-right: 20px;
-            max-height: 550px;
-            /* Set ukuran maksimal konten */
-            overflow-y: auto;
-            /* Tambahkan overflow untuk mengatur konten yang melebihi ukuran maksimal */
-        }
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 20px;
+    max-height: 550px;
+    margin-bottom: 100px;
+    overflow-y: auto;
+    top: -50px;
+    max-width: 100%; /* Tambahkan properti max-width */
+}
+
+/* Tambahkan media query untuk mengatur lebar maksimal */
+@media (max-width: 768px) {
+    .contact-info {
+        max-width: 90%; /* Sesuaikan lebar maksimal dengan kebutuhan pada layar yang lebih kecil */
+    }
+}
 
         .social-icons {
             position: absolute;
@@ -226,10 +233,12 @@
 
         .contact-form {
             background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            flex: 1;
-        }
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin-bottom: 150px; /* Tambahkan margin kiri untuk memberi jarak antara kedua elemen */
+    
+}
 
         .form-group {
             margin-bottom: 15px;
