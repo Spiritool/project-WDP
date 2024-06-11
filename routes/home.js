@@ -17,7 +17,7 @@ router.post('/', async function (req, res, next) {
             message
         };
         await model_contact.Store(Data); // Memperbaiki casing dari Store ke store
-        req.flash('success', 'Berhasil menyimpan data kontak');
+        req.flash('success', 'Berhasil menginputkan pesan');
         res.redirect('/home');
     } catch (error) {
         console.error("Error saving contact data:", error);
